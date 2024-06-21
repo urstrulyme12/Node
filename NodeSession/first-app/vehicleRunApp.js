@@ -1,4 +1,4 @@
 const user = require('./vehicleApp');
 
-user.getVehicle();
+// user.getVehicle();
 user.addVehicle();

@@ -25,6 +25,7 @@ user = [
 
 //converts object in json data
 const userJSON = JSON.stringify(user);
+fs.writeFileSync('1-firstJson.json',userJSON)
 console.log(userJSON)
 
 //takes json string and gives object

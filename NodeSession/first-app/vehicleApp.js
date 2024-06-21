@@ -1,3 +1,4 @@
+// there is some error
 const fs = require('fs')
 
 const getVehicle = (vehicle) =>{
@@ -16,9 +17,9 @@ const addVehicle = () =>{
     //     console.log(i);
     // })
     console.log(vehicle)
- const duplicateVehicle = vehicle.filter((veh)=>{ 
-    console.log(veh.name);
-      return true;
+ const duplicateVehicle = vehicle.find((veh)=>{ 
+    console.log(veh,'why');
+      return veh  !== undefined;;
   })
  console.log(duplicateVehicle)
  if(duplicateVehicle.length === 0){
