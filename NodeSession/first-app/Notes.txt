@@ -1,0 +1,20 @@
+
+three types of modules
+1. local
+2.Built-in - path,streams,fs,http
+3.Third parties
+
+//converts object in json data
+const userJSON = JSON.stringify(user);
+
+//takes json string and gives object
+const pData = JSON.parse(userJSON);
+
+// read file
+const dataBuffer = fs.readFileSync('1-firstJson.json')
+
+//write file
+fs.writeFileSync('1-firstJson.json',saveJson);
+
+//append
+fs.appendFileSync('1-firstJson.json',saveJson);
